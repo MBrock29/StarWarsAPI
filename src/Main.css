@@ -1,3 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to left, rgba(7,27,82,1) 0%, rgba(0,128,128,1) 100%); /* w3c */
+}
+
+.cards {
+  border-style: solid;
+  background-color: lightgreen;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 25px;
+  margin: 10px;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.header {
+  font-size: 50px;
+  color: aquamarine;
+}
+
+
 .loader {
     color: red;
     font-size: 20px;
