@@ -10,7 +10,9 @@ export default function Main() {
     }, 2000);
   }, [])
   useEffect(() => {
-  fetch("https://swapi.dev/api/people", {mode: "no-cors"})
+  fetch("https://swapi.dev/api/people", {mode: "no-cors", header: {
+    'Access-Control-Allow-Origin':'*',
+  }})
     .then((response) => response.json())
     .then((data) => setAPIData(data))
   }, [])
