@@ -28,8 +28,8 @@ export default function Main() {
     <div className="container">
       {APIdata.docs.map((item) => (
         <div className="zoom"><div className="cards"><h1  key={Math.random()}>{item.name}</h1>
-        {/* <h2>Height:&nbsp;{item.height}cm</h2>
-        <h2>Weight:&nbsp;{item.mass}kg</h2> */}
+        <h2>Academy award wins:&nbsp;{item.academyAwardWins}</h2>
+        <h2>Box office revenue (millions):&nbsp;{item.boxOfficeRevenueInMillions}</h2>
         </div></div>
       ))}
     </div>
