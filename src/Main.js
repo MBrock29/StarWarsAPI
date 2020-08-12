@@ -10,7 +10,14 @@ export default function Main() {
     }, 2000);
   }, [])
   useEffect(() => {
-  fetch("https://the-one-api.herokuapp.com/v1/book")
+  fetch("https://the-one-api.herokuapp.com/v1/movie", {
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, *same-origin, omit
+    headers: {
+      "Authorization": "Bearer LCwaFCTbDRgPNznjUS7q"
+    },
+  })
     .then((response) => response.json())
     .then((data) => setAPIData(data))
   }, [])
